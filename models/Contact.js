@@ -18,5 +18,9 @@ const contactSchema = new Schema({
       type: String,
       require: true,
     },
+    country: {
+      type: String,
+      require: true,
+    },
   });
   module.exports = Contact = mongoose.model("contacts", contactSchema);
