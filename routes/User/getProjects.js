@@ -1,4 +1,4 @@
-const Project = require("../../models/Experience");
+const Project = require("../../models/Project");
 module.exports = async (req, res) => {
   try {
     let projects = await Project.find();

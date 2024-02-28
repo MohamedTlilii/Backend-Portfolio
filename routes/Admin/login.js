@@ -4,7 +4,7 @@ module.exports = async (req, res) => {
   try {
     const { email, password } = req.body;
     const admin = await Admin.findOne({ email });
-
+console.log(admin);
     if (!admin || admin.password !== password) {
       return res.status(401).json({ status: false, error: "Wrong email or password" });
     }
