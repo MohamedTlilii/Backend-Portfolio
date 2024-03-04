@@ -26,8 +26,7 @@ app.use(cors())
 app.use("/api/data", require("./routes/User"));
 // Portfolio routes
 
-app.use("/api/admin", require("./routes/Admin"));
-// admin routes
+
 
 // routes
 app.listen(PORT, (err) => {
