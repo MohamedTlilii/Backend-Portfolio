@@ -24,6 +24,7 @@ mongoose
 app.use(express.json());
 app.use(cors())
 app.use("/api/data", require("./routes/User"));
+app.use("/api/data", require("./routes/Admin"));
 // Portfolio routes
 // ...
 

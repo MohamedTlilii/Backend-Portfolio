@@ -13,5 +13,4 @@ route.get("/experiences", require("./getExperiences"));
 route.get("/projects", require("./getProjects"));
 // Get Contact
 route.get("/contact", require("./getContact"));
-
 module.exports = route;
