@@ -2,6 +2,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
 const cors = require("cors");
+const multer = require("multer");
+const path = require("path");
+
 // YA9RA LES REQUET
 require("dotenv").config();
 
@@ -26,6 +29,10 @@ app.use(cors())
 app.use("/api/data", require("./routes/User"));
 app.use("/api/data", require("./routes/Admin"));
 // Portfolio routes
+
+
+// Image Storage Engine
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 
 // routes
